@@ -4,18 +4,44 @@
 
     internal class App
     {
+        private const double CircleRadius = 1.5;
+        private const double CirclePosition = 1;
+
+        private struct Point
+        {
+            public double X, Y;
+        }
+
+        private static bool InsideCircle(Point point)
+        {
+            var isInCircle = (point.X - CirclePosition) * (point.X - CirclePosition) +
+                (point.Y - CirclePosition) * (point.Y - CirclePosition)
+                <= (CircleRadius * CircleRadius);
+
+            return isInCircle;
+        }
+
+        private static bool InsideRectangle(Point point)
+        {
+            var isInsideRectangle = (point.X >= -1 && point.X <= 5)
+                && (point.Y >= -1 && point.Y <= 1);
+
+            return isInsideRectangle;
+        }
+
         private static void Main()
         {
-            const double circleCenterX = 1;
-            const double circleCenterY = 1;
-            const double circleRadius = 1.5;
-            const double rectTop = 1;
-            const double rectLeft = -1;
-            const double rectWidth = 6;
-            const double rectHeight = 2;
+            var test = new Point
+            {
+                X = double.Parse(Console.ReadLine()),
+                Y = double.Parse(Console.ReadLine())
+            };
+            var isInsideCircle = InsideCircle(test);
+            var isInsideRectangle = InsideRectangle(test);
 
-            var pointX = double.Parse(Console.ReadLine());
-            var pointY = double.Parse(Console.ReadLine());
+            Console.WriteLine("{0} circle {1} rectangle",
+                isInsideCircle ? "inside" : "outside",
+                isInsideRectangle ? "inside" : "outside");
         }
     }
 }
