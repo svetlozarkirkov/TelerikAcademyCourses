@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7814270C-7AE3-4398-8FA8-4EF0A8E8384C}</ProjectGuid>
+    <ProjectGuid>{A41A2507-A785-48D9-80AF-C69AA6E44D9B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_09_PrintSequence</RootNamespace>
-    <AssemblyName>09-PrintSequence</AssemblyName>
+    <RootNamespace>_07_QuotesInStrings</RootNamespace>
+    <AssemblyName>07-QuotesInStrings</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
