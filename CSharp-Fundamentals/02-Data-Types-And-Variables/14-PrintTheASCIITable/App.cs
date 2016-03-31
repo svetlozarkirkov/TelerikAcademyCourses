@@ -8,7 +8,7 @@
         {
             for (var i = 33; i <= 126; i++)
             {
-                Console.Write((char)i); // Not L10N
+                Console.Write((char)i);
             }
             Console.WriteLine();
         }

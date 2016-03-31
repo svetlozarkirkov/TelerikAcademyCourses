@@ -6,7 +6,7 @@
     {
         private static void Main()
         {
-            Console.WriteLine("Hello, C#!"); // Not L10N
+            Console.WriteLine("Hello, C#!");
         }
     }
 }

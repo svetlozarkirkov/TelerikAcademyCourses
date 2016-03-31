@@ -10,7 +10,7 @@
             var input = Console.ReadLine();
             var inputDate = DateTime.ParseExact(
                 input,
-                "MM.dd.yyyy", // Not L10N
+                "MM.dd.yyyy",
                 CultureInfo.InvariantCulture);
             var age = GetAge(inputDate, DateTime.Now);
             Console.WriteLine(age);
