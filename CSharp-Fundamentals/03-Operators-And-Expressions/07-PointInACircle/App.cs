@@ -1,20 +1,30 @@
-﻿namespace _07_PointInACircle
+namespace _07_PointInACircle
 {
     using System;
 
     internal class App
     {
-        private static void Main()
+        private const int radius = 2;
+        
+        private struct Point
         {
-            var x = double.Parse(Console.ReadLine());
-            var y = double.Parse(Console.ReadLine());
-            const int radius = 2;
-
-            var distance = Math.Sqrt(Math.Pow(Math.Abs(0 - x), 2)
-                + Math.Pow(Math.Abs(0 - y), 2));
-
-            var isInsideTheCircle = x <= radius && y <= radius;
-            Console.WriteLine(isInsideTheCircle ? "yes {0:F2}" : "no {0:F2}", distance);
+            public double X, Y;
+        }
+        
+        private static bool InsideCircle(Point point)
+        {
+            bool isInCircle = point.X*point.X + point.Y*point.Y <= (radius*radius);
+            return isInCircle;
+        }
+        
+        static void Main()
+        {
+            Point test = new Point();
+            test.X = double.Parse(Console.ReadLine());
+            test.Y = double.Parse(Console.ReadLine());
+          	var distance = Math.Sqrt(Math.Pow(Math.Abs(0 - test.X), 2)
+                + Math.Pow(Math.Abs(0 - test.Y), 2));
+            Console.WriteLine(InsideCircle(test) ? "yes {0:F2}" : "no {0:F2}", distance);
         }
     }
 }
