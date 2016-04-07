@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Calculator</title>
+    <style>
+        fieldset {
+            border:none;
+        }
+        table {
+            width: 22%;
+            height: 300px;
+            table-layout: fixed;
+            box-shadow: 1px 1px 2px black;
+        }
+        table, td {
+            border: 2px solid darkblue;
+        }
+        textarea {
+            background-color: lightcyan;
+            resize: none;
+            width: 99%;
+            height: 70px;
+            line-height: 70px;
+            font-size: 36px;
+            font-weight: bold;
+            text-align: right;
+            border: none;
+        }
+        textarea[disabled] {
+            color: black;
+        }
+        button {
+            background-color: darkturquoise;
+            width: 100%;
+            border:none;
+            display: inline-block;
+        }
+        button, td {
+            height: 70px;
+            font-size: 24px;
+            font-weight: bold;
+            color: greenyellow;
+        }
+        td, button, textarea {
+            text-shadow: 1px 1px 2px black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <td colspan="4" style="height: 30px">
+                        <textarea rows="1" cols="4" placeholder="123" readonly disabled></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td><button type="button">1</button></td>
+                    <td><button type="button">2</button></td>
+                    <td><button type="button">3</button></td>
+                    <td><button type="button">+</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button">4</button></td>
+                    <td><button type="button">5</button></td>
+                    <td><button type="button">6</button></td>
+                    <td><button type="button">-</button></td>
+                </tr>
+                <tr>
+                    <td><button type="button">7</button></td>
+                    <td><button type="button">8</button></td>
+                    <td><button type="button">9</button></td>
+                    <td><button type="button">*</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button type="button">0</button></td>
+                    <td><button type="button">.</button></td>
+                    <td><button type="button">/</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
