@@ -1,30 +1,21 @@
 ﻿namespace _13_ModifyBit
 {
     using System;
+    using System.Linq;
 
     internal class App
     {
         private static void Main()
         {
-            var number = uint.Parse(Console.ReadLine());
+            var numberAsBinaryString = Convert.ToString(uint.Parse(Console.ReadLine()), 2);
             var position = int.Parse(Console.ReadLine());
             var bitValue = int.Parse(Console.ReadLine());
 
-            var mask = 0L;
-            var numberAfter = 0L;
-
-            if (bitValue == 1)
-            {
-                mask = 1 << position;
-                numberAfter = number | mask;
-            }
-            else
-            {
-                mask = ~(1 << position);
-                numberAfter = number & mask;
-            }
-
-            Console.WriteLine(numberAfter);
+            var binaryList = numberAsBinaryString.PadLeft(64, '0').ToCharArray().ToList();
+            binaryList.Reverse();
+            binaryList[position] = bitValue == 1 ? '1' : '0';
+            binaryList.Reverse();
+            Console.WriteLine(Convert.ToUInt64(string.Join("", binaryList),2));
         }
     }
 }
