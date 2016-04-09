@@ -1,4 +1,4 @@
-﻿namespace _02_CompanyInfo
+namespace _02_CompanyInfo
 {
     using System;
 
@@ -24,7 +24,7 @@
             // output
             Console.WriteLine(
                 "{0}\nAddress: {1}\nTel. {2}\nFax: {3}\nWeb site: {4}\n" +
-                "Manager: {5}{6} (age:{7}, tel. {8}",
+                "Manager: {5} {6} (age: {7}, tel. {8})",
                 companyName,
                 companyAddress,
                 companyPhoneNumber,

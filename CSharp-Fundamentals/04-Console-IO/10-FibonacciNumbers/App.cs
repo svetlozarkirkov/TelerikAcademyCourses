@@ -1,4 +1,4 @@
-﻿namespace _10_FibonacciNumbers
+namespace _10_FibonacciNumbers
 {
     using System;
 
@@ -6,9 +6,9 @@
     {
         private static void Main()
         {
-            var n = int.Parse(Console.ReadLine());
-            var first = 0;
-            var second = 1;
+            var n = long.Parse(Console.ReadLine());
+            var first = 0L;
+            var second = 1L;
             for (var i = 0; i < n; i++)
             {
                 Console.Write("{0}", first);
