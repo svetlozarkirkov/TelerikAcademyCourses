@@ -13,9 +13,9 @@
             var input = Console.ReadLine();
 
             Console.WriteLine(
-                validCards.Contains(input)
+                validCards.Contains(input.ToUpperInvariant())
                 ? "yes {0}"
-                : "no {0}", input.ToLowerInvariant());
+                : "no {0}", input);
         }
     }
 }
