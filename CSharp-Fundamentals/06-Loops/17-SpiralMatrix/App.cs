@@ -6,9 +6,7 @@
     {
         private static void Main()
         {
-            System.Console.SetWindowSize(100, 30);
             var n = int.Parse(Console.ReadLine());
-            Console.Clear();
             var matrix = new int[n, n];
             var row = 0;
             var col = 0;
@@ -57,8 +55,12 @@
             {
                 for (var j = 0; j < matrix.GetLength(1); j++)
                 {
-                    Console.SetCursorPosition(j * 5, i * 2);
                     Console.Write(matrix[i, j]);
+
+                    if (j < matrix.GetLength(1) - 1)
+                    {
+                        Console.Write(" ");
+                    }
                 }
                 Console.WriteLine();
             }

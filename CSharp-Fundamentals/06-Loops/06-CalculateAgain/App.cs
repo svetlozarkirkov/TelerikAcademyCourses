@@ -1,6 +1,7 @@
 ﻿namespace _06_CalculateAgain
 {
     using System;
+    using System.Numerics;
 
     internal class App
     {
@@ -12,9 +13,10 @@
             Console.WriteLine(result);
         }
 
-        private static double CalculateFactorial(int number)
+        private static BigInteger CalculateFactorial(BigInteger number)
         {
-            double fact = number;
+            var fact = number;
+
             for (var i = number - 1; i >= 2; i--)
             {
                 fact = fact * i;
