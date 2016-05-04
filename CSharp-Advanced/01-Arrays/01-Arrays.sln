@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-AllocateArray", "01-AllocateArray\01-AllocateArray.csproj", "{7866D7FF-121D-4FB9-B6FF-25CC03B6903B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-CompareArrays", "02-CompareArrays\02-CompareArrays.csproj", "{757A5210-EE59-4E61-A749-EC1FB602ADDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-CompareCharArrays", "03-CompareCharArrays\03-CompareCharArrays.csproj", "{27B853E3-BDFB-4EF9-A517-15B8A573431E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7866D7FF-121D-4FB9-B6FF-25CC03B6903B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7866D7FF-121D-4FB9-B6FF-25CC03B6903B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7866D7FF-121D-4FB9-B6FF-25CC03B6903B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7866D7FF-121D-4FB9-B6FF-25CC03B6903B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757A5210-EE59-4E61-A749-EC1FB602ADDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757A5210-EE59-4E61-A749-EC1FB602ADDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757A5210-EE59-4E61-A749-EC1FB602ADDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757A5210-EE59-4E61-A749-EC1FB602ADDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27B853E3-BDFB-4EF9-A517-15B8A573431E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B853E3-BDFB-4EF9-A517-15B8A573431E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B853E3-BDFB-4EF9-A517-15B8A573431E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B853E3-BDFB-4EF9-A517-15B8A573431E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
