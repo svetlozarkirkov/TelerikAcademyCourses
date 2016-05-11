@@ -1,20 +1,18 @@
-﻿namespace _06_MaximalKSum
+﻿namespace _11_BinarySearch
 {
     using System;
-    using System.Collections.Generic;
 
     internal class App
     {
         private static void Main()
         {
             var n = int.Parse(Console.ReadLine());
-            var k = int.Parse(Console.ReadLine());
             var array = new int[n];
             for (var i = 0; i < n; i++)
             {
                 array[i] = int.Parse(Console.ReadLine());
             }
-
+            var x = int.Parse(Console.ReadLine());
         }
     }
 }
